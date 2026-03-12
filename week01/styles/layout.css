@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto auto 1fr auto;   /* header, nav, conteúdo, footer */
+  grid-template-columns: 200px 1fr 200px;   /* sidebar esquerda, main, sidebar direita */
+}
+
+header {
+  background: lightpink;
+  padding: 1rem;
+  grid-column: 1 / 4;   /* ocupa todas as colunas */
+}
+
+.navagation-bar {
+  background-color: rgb(1, 107, 1);
+  display: flex;
+  justify-content: space-around;
+  grid-column: 1 / 4;   /* ocupa todas as colunas */
+  padding: 8px;         /* barra menor */
+}
+
+.left-sidebar {
+  background: lightblue;
+  grid-row: 3;          /* fica na linha do conteúdo */
+  grid-column: 1;       /* primeira coluna */
+  padding: 1rem;
+}
+
+main {
+  background: lightblue;
+  grid-row: 3;          /* mesma linha do conteúdo */
+  grid-column: 2;       /* coluna central */
+  padding: 1rem;
+}
+
+.right-sidebar {
+  background: yellow;
+  grid-row: 3;          /* mesma linha do conteúdo */
+  grid-column: 3;       /* última coluna */
+  padding: 1rem;
+}
+
+footer {
+  background: wheat;
+  padding: 1rem;
+  text-align: center;
+  grid-column: 1 / 4;   /* ocupa todas as colunas */
+}

@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD 131 – Dynamic Web Fundamentals – Juliana Coutinho Rodrigues</title>
+
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Juliana Coutinho Rodrigues | Página inicial com atividades, exemplos de HTML, CSS, layout responsivo e prática de grid.">
+  <meta name="author" content="Juliana Coutinho Rodrigues">
+  <script src="scripts/getdates.js" defer></script>
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>WDD 131 - Juliana Coutinho </h1>
-    <p>Home page of the course assigments</p>
+  
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/juliana-coutinho-rodrigues" target="_blank">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a></li>
+        <li><a href="final-project/" target="_blank">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <h1>Juliana Coutinho Rodrigues</h1>
+
+    <section class="card">
+      <h2>Card 1 Title</h2>
+      <img src="images/profile.jpg" alt="A picture of me in the temple " width="150">
+      <p>Lorem Ipsum.</p>
+    </section>
+
+    <section class="card">
+      <h2>Card 2 Title</h2>
+      <img src="images/christ-redeemer.jpg" alt="A picture of state I live to illustrate" width="150">
+      <p>Lorem Ipsum.</p>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Juliana Coutinho Rodrigues – Rio de Janeiro, Brasil</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  
+  <script>
+    // Ano atual
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Última modificação
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
 </body>
 </html>
-<!-- tentativa numero nem sei mais qual-->
- 
