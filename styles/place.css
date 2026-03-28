@@ -1,0 +1,111 @@
+
+:root {
+  --primary-color: #006400;   
+  --secondary-color: #ffffff; 
+  --accent-color: #ff0000;    
+  --text-color: #333333;
+  --heading-font: 'Roboto', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+
+.hero {
+  aspect-ratio: 2 / 1;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.about, .weather, .gallery {
+  margin-bottom: 2rem;
+}
+
+.weather h2::after {
+  content: " ⛅"; 
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+
+footer {
+  text-align: left;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+main h2 {
+  grid-column: 1 / span 2;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main h2 {
+    grid-column: 1;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
