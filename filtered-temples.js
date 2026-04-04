@@ -105,52 +105,52 @@ const temples = [
      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/curitiba-brazil/400x250/curitiba-brazil-temple-lds-852263-wallpaper.jpg"
    },
   ]
-  // Seleciona o container onde os cards serão inseridos
+ 
 const container = document.querySelector('#temple-cards');
 
-// Loop pelo array de templos
+
 temples.forEach(temple => {
-  // Cria o card
+  
   const card = document.createElement('section');
   card.classList.add('temple-card');
 
-  // Nome do templo
+  
   const name = document.createElement('h2');
   name.textContent = temple.templeName;
 
-  // Localização
+  
   const location = document.createElement('p');
   location.textContent = `Location: ${temple.location}`;
 
-  // Data de dedicação
+  
   const dedicated = document.createElement('p');
   dedicated.textContent = `Dedicated: ${temple.dedicated}`;
 
-  // Área total
+  
   const area = document.createElement('p');
   area.textContent = `Area: ${temple.area} sq ft`;
 
-  // Imagem com lazy loading
+  
   const image = document.createElement('img');
   image.src = temple.imageUrl;
   image.alt = temple.templeName;
   image.loading = 'lazy';
 
-  // Adiciona tudo ao card
+ 
   card.appendChild(name);
   card.appendChild(location);
   card.appendChild(dedicated);
   card.appendChild(area);
   card.appendChild(image);
 
-  // Insere o card no container
+ 
   container.appendChild(card);
 });
 
-// Function to render temple cards
+
 function displayTemples(filteredTemples) {
   const container = document.querySelector('#temple-cards');
-  container.innerHTML = ''; // clear previous cards
+  container.innerHTML = '';
 
   filteredTemples.forEach(temple => {
     const card = document.createElement('section');
@@ -178,10 +178,10 @@ function displayTemples(filteredTemples) {
   });
 }
 
-// Initial display (Home)
+
 displayTemples(temples);
 
-// --- Navigation filtering ---
+
 document.querySelectorAll('nav ul li').forEach(item => {
   item.addEventListener('click', () => {
     const filter = item.textContent.toLowerCase();
@@ -215,17 +215,16 @@ document.querySelectorAll('nav ul li').forEach(item => {
   });
 });
 
-// --- Footer dynamic year and last modified ---
-// --- Footer dynamic year and last modified ---
+
 const footer = document.querySelector('footer');
 
-// Ano atual
+
 const year = new Date().getFullYear();
 
-// Converte a string de última modificação em objeto Date
+
 const lastModifiedDate = new Date(document.lastModified);
 
-// Formata para mostrar data e hora
+
 const options = {
   day: '2-digit',
   month: 'long',
@@ -236,7 +235,7 @@ const options = {
 };
 const formattedDate = lastModifiedDate.toLocaleString('pt-BR', options);
 
-// Insere no footer
+
 footer.innerHTML = `&copy; ${year} Juliana | Last Updated: ${formattedDate}`;
 
 
