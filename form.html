@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Product Review Form Assignment">
+<meta name="description" content="Submit a detailed product review including ratings, installation date, useful features, and feedback to improve usability.">
   <meta name="author" content="Juliana Coutinho Rodrigues">
   <title>Form Assignment | Week 5</title>
   <link rel="stylesheet" href="styles/form.css">
@@ -51,16 +51,20 @@
 
       <!-- Useful Features -->
       <fieldset>
-        <legend>Useful Features (check all that apply):</legend>
-        <label for="feature1">Feature A</label>
-        <input type="checkbox" id="feature1" name="features" value="Feature A">
-        
-        <label for="feature2">Feature B</label>
-        <input type="checkbox" id="feature2" name="features" value="Feature B">
-        
-        <label for="feature3">Feature C</label>
-        <input type="checkbox" id="feature3" name="features" value="Feature C">
-      </fieldset>
+  <legend>Useful Features (check all that apply):</legend>
+  <label for="feature1">Feature A</label>
+  <input type="checkbox" id="feature1" name="features" value="Feature A">
+
+  <label for="feature2">Feature B</label>
+  <input type="checkbox" id="feature2" name="features" value="Feature B">
+
+  <label for="feature3">Feature C</label>
+  <input type="checkbox" id="feature3" name="features" value="Feature C">
+
+  <label for="feature4">Feature D</label>
+  <input type="checkbox" id="feature4" name="features" value="Feature D">
+</fieldset>
+
 
       <!-- Written Review -->
       <label for="review">Written Review:</label>
@@ -79,21 +83,6 @@
     <p>&copy; 2026 | Juliana Coutinho Rodrigues | WDD 131</p>
   </footer>
 
-  <script>
-    // Example product array
-    const products = [
-      { name: "Crochet Hook Set" },
-      { name: "Yarn Bundle" },
-      { name: "Beginner Pattern Book" }
-    ];
 
-    const productSelect = document.getElementById("product");
-    products.forEach(product => {
-      const option = document.createElement("option");
-      option.value = product.name;
-      option.textContent = product.name;
-      productSelect.appendChild(option);
-    });
-  </script>
 </body>
 </html>

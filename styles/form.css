@@ -65,3 +65,68 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #2980b9;
 }
+
+
+/* Base styles (already included earlier) */
+
+/* --- Responsive Design --- */
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  form {
+    gap: 0.75rem;
+  }
+
+  input, select, textarea {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  main {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 901px) {
+  main {
+    max-width: 700px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+  }
+
+  form label {
+    grid-column: span 2;
+  }
+
+  input[type="submit"] {
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+  }
+}
