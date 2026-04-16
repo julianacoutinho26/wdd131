@@ -1,0 +1,97 @@
+/* Base styles (reuse your main theme) */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf5;
+  color: #333;
+}
+
+header {
+  background-color: #6a4c93;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+
+/* Patterns page specific */
+section {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #f5c6a5;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #6a4c93;
+}
+
+button {
+  background-color: #6a4c93;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a3a7a;
+}
+
+#confirmation {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #6a4c93;
+}
+
+footer {
+  background-color: #6a4c93;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crochet for Beginners - Patterns & Practices</title>
+  <link rel="stylesheet" href="styles/patterns.css">
+
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Patterns & Practices</h1>
+    <nav>
+      <ul>
+        <li><a href="siteplan.html">Home</a></li>
+        <li><a href="tutorials.html">Tips & Tutorials</a></li>
+        <li><a href="patterns.html">Patterns & Practices</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section>
+    <h2>Beginner Projects</h2>
+    <p>Try these simple crochet projects to practice your skills:</p>
+    <div class="project">
+      <h3>Granny Square</h3>
+      <img src="images/granny-square.jpg" alt="Crochet granny square" loading="lazy">
+      <p>A classic beginner project that teaches you how to work in rounds.</p>
+    </div>
+
+    <div class="project">
+      <h3>Coaster</h3>
+      <img src="images/coaster.jpg" alt="Crochet coaster" loading="lazy">
+      <p>Quick and easy, perfect for practicing stitches while making something useful.</p>
+    </div>
+
+    <div class="project">
+      <h3>Simple Scarf</h3>
+      <img src="images/simple-scarf.jpg" alt="Crochet simple scarf" loading="lazy">
+      <p>A straightforward project to practice rows and tension control.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Subscribe for Tips</h2>
+    <form id="subscribeForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="confirmation"></p>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2026 Juliana Coutinho Rodrigues | Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+   <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+    
+  </script>
+</body>
+</html>
